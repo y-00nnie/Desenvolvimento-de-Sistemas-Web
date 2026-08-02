@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Comissões</title>
+</head>
+<body>
+    <div class="formulario">
+        <h1>Formulário de Comissões</h1>
+    </div>
+    <div class="exemplos">
+        <h2>Tipos de Comissão</h2>
+        <fieldset>
+            <img src="pictures/bust-up.png" align="left">
+            <h3>Busto</h3>
+        </fieldset>
+    </div>
+    <div class="comissoes">
+        <h2>Especificações do Desenho</h2>
+        <form>
+
+            <!--TIPO-->
+
+            <fieldset>
+                <legend>Selecione o tipo de comissão:</legend>
+                <label for="busto">
+                    <input type="radio" id="busto" name="tipo-comissao" value="busto" checked>
+                    Busto (R$15.00)
+                </label>
+                <label for="meio-corpo">
+                    <input type="radio" id="meio-corpo" name="tipo-comissao" value="meio-corpo">
+                    Meio Corpo (R$25.00)
+                </label>
+            </fieldset>
+
+            <!--ADICIONAIS-->
+
+            <fieldset>
+                <legend>Adicionais?</legend>
+                <label for="personagem-extra">
+                    <input type="checkbox" id="personagem-extra" name="adicional" value="sim">
+                    Personagem Extra (+75% do valor do tipo de comissão)
+                </label>
+                <label for="cenario">
+                    <input type="checkbox" id="cenario" name="adicional" value="sim">
+                    Cenário Detalhado (+ R$10.00)
+                </label>
+            </fieldset>
+
+            <!--QTDE ADICIONAIS-->
+
+            <fieldset>
+                <legend>Adição de quantos personagens? (máximo de 2 personagens extras)</legend>
+                <label for="qtde_extra">
+                    <input type="number" id="qtde_extra" min="0" max="2" step="1" placeholder="0"/>
+                </label>
+            </fieldset>
+            
+            <!--REFERENCIAS-->
+
+            <fieldset>
+                <legend>Por favor, envie imagens de referência nítidas dos personagens.</legend>
+                <label for="referencia">
+                    <input type="file" id="referencia" required/>
+                </label>
+            </fieldset>
+
+            <!--DESCRIÇÃO-->
+
+            <fieldset>
+                <legend>Descreva detalhadamente como gostaria que seja feito seu desenho:</legend>
+                <label for="descricao">
+                    <textarea id="descricao" rows="5" cols="40" minlength="20" placeholder="Digite a sua descrição aqui..." required></textarea>
+                </label>
+            </fieldset>
+
+        </form>
+    </div>
+
+    <div class="info-pessoal">
+        <h2>Informações Pessoais</h2>
+        <form>
+            <fieldset>
+                <legend>Nome Completo:</legend>
+                <label for="nome-completo">
+                    <input type="text" id="nome-completo" pattern="[a-zA-Z]" required>
+                </label>
+            </fieldset>
+
+
+            <!--TERMOS-->
+
+            <label for="termos-e-servicos">
+                <input type="checkbox" id="termos-e-servicos" required />
+                Eu concordo que li e estou de acordo com os 
+                <a href="https://docs.google.com/document/d/1rdIROqA_Co32znD1SzURUr14c1TIMzrOgiV0PdmeNO0/edit?usp=sharing">
+                Termos de Serviço</a>.
+            </label>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+</body>
+
+</html>
