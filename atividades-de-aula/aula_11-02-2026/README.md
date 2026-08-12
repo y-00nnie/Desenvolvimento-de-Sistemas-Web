@@ -13,7 +13,7 @@ Construir o arquivo CSS a partir do arquivo html programaticamente.
 
 O problema desse comando é que ele retorna os estilos de uma tag por vez. A solução que encontrei foi utilizar o forEach pra percorrer todas as tags e retornar em cada linha do console os atributos de estilo correspondentes.
 
-` document.querySelectorAll('[style]').forEach(elemento => elemento.getAttribute('style')); `
+` document.querySelectorAll('[style]').forEach(elemento => elemento.getAttribute("style")); `
 
 Utilizei o querySelectorAll para acessar todos os elementos com atributo style.
 
