@@ -21,3 +21,7 @@ Utilizei o querySelectorAll para acessar todos os elementos com atributo style.
 
 - Se preciso salvar em um arquivo CSS utilizando o javascript pra formatar ou se preciso escrever diretamente.
 - Como diferencio as divs, já que não são todas que possuem um id.
+
+### Anotação feita em aula
+
+[Atividade_11-08-2026](https://docs.google.com/document/d/1QTTL-jKiM172CejXs4svNUBWmFDSoWsh7l3OMOwLbzk/edit?usp=sharing)
