@@ -17,6 +17,10 @@ O problema desse comando é que ele retorna os estilos de uma tag por vez. A sol
 
 Utilizei o querySelectorAll para acessar todos os elementos com atributo style.
 
+### Resultados
+
+![resultado_console](./resultado_console.png)
+
 ### O que eu não entendi?
 
 - Se preciso salvar em um arquivo CSS utilizando o javascript pra formatar ou se preciso escrever diretamente.
