@@ -12,4 +12,4 @@ Elaborar o layout de uma aplicação de comunicação por mensagens de texto –
 
 ## Resultado Final
 
-![Resultado]("/img/resultado_final.png")
+![Resultado](./img/resultado_final.png)
