@@ -29,7 +29,7 @@ body {
     border-radius: 1%;
     height: 90%;
     width: 90%;
-    position:relative;
+    position:absolute;
     margin: 5%;
     z-index: 0;
 }
@@ -39,9 +39,7 @@ body {
     border-radius: 1%;
     height: 100%;
     width: 30%;
-    position:absolute;
-    top: 0;
-    left: 0;
+    position:relative;
     z-index: 1;
 }
 
@@ -72,7 +70,7 @@ body {
     object-fit: cover;
 }
 
-#caixa_de_mensagem {
+.caixa_de_mensagem {
     background-color: #EFEFEF;
     height: 7%;
     width: 100%;
