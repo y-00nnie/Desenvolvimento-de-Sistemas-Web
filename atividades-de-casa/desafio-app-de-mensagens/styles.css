@@ -1,5 +1,5 @@
-/* Remove toda margem */
-* {
+/* Vou refazer esse CSS porque tá muito desorganizado*/
+*{
     margin: 0;
     padding: 0;
 }
@@ -63,7 +63,7 @@ body {
     z-index: 1;
 }
 
-#profile_picture {
+.profile_picture {
     border-radius: 50%;
     background-color:#ce4620;
     height: 40px;
@@ -107,4 +107,22 @@ input[type="text"]{
 }
 
 
+.contato{
+    background-color: #EAEAEC;
+    width: 99%;
+    height: 10%;
+    position: absolute;
+    top: 30%;
+}
 
+#pesquisa > input{
+    width: 95%;
+    margin: 2px;
+    position: absolute;
+    left: 1%;
+    top: 10%;
+}
+
+.lista_de_contatos, li {
+    list-style-type: none;
+}

@@ -1,3 +1,14 @@
+
+<!--
+ -> preciso reorganizar muita coisa nesse código
+ -> dar um jeito que colocar as informações de contato ao lado
+  da foto
+  -> trocar as medidas do css
+  ->adicionar footer na tela de mensagens
+  ->alterar nomes das classes, preciso ser mais específica
+
+-->
+
 <!DOCTYPE html>
 
 <html lang="pt-br">
@@ -10,9 +21,9 @@
     <body>
         <div class="fundo"></div>
         <div class="app">
-            <div class="menu_contatos">
+            <aside class="menu_contatos">
                 <header>
-                    <img id="profile_picture" src="/img/animal_chara_computer_neko.png">
+                    <img class="profile_picture" src="/img/animal_chara_computer_neko.png">
                 </header>
                 <div id="notificacao">
 
@@ -20,16 +31,38 @@
                 <div id="pesquisa">
                     <input type="text" id="busca" placeholder="🔍 pesquisar contato">
                 </div>
-            </div>
-            <div class="mensagens">
+                <ul class="lista_de_contatos">
+                    <li class="contato">
+                        <article>
+                            <img class="profile_picture" src="/img/hikkoshi_woman.png">
+                            <p>Camila</p>
+                        </article>
+                    </li>
+                    <li class="contato">
+                        <article>
+                            <img class="profile_picture" src="/img/animal_chara_computer_neko.png">
+                            <p>Você</p>
+                        </article>
+                        
+                    </li>
+
+                </ul>
+                
+            </aside>
+            <main class="mensagens">
                 <header>
-                    <img id="profile_picture" src="/img/hikkoshi_woman.png">
+                    <figure>
+                        <img class="profile_picture" src="/img/hikkoshi_woman.png">
+                    </figure>
                 </header>
+                <div id="bloco-de-mensagem">
+                    
+                </div>
                 <div id="caixa_de_mensagem">
                     😊​
                     <input type="text">
                 </div>
-            </div>
+            </main>
         </div>
     </body>
 </html>
