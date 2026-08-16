@@ -13,3 +13,5 @@ Elaborar o layout de uma aplicação de comunicação por mensagens de texto –
 ## Resultado Final
 
 ![Resultado](./img/resultado_final.png)
+
+[Versão do CodePen](https://codepen.io/editor/Gabriella-P/pen/019fecbd-47c4-7b65-a0ee-eb9908d17b36)
