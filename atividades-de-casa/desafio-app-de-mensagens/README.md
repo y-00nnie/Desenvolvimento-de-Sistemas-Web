@@ -9,6 +9,7 @@ Elaborar o layout de uma aplicação de comunicação por mensagens de texto –
 - está funcional apenas no campo de mensagens
 - fiz direto pelo VSCode utilizando o live server 
 - como o codepen aceita uma quantidade limitada de arquivos, utilizarei emojis para simular imagens
+- quero melhorar depois com mais calma
 
 ## Resultado Final
 
