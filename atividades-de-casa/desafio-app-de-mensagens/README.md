@@ -16,7 +16,7 @@ Elaborar o layout de uma aplicação de comunicação por mensagens de texto –
 
 - adicionar contatos na barra de contatos
 - entrada funcional
-- 
+- preciso alterar alguns elementos, tem div até demaisss
 
 ## Considerações
 
