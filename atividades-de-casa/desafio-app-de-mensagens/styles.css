@@ -45,6 +45,18 @@ body::before {
     background-color: #EFEFEF;
     width: 100vw;
     height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.painel-contatos input{
+    border-style: hidden;
+    border-radius: 5px;
+    height: 5%;
+    margin: 5px;
+    align-self: center;
 }
 
 .painel-mensagens{
@@ -91,6 +103,7 @@ button {
     height: 10px;;
 }
 
+
 section{
     display: flex;
     justify-content: flex-end;
@@ -109,6 +122,10 @@ section{
     align-self: flex-end;
     display: flex;
     flex-direction: column;
+}
+
+.contatos-selecionado{
+ background-color: #EAEAEC;
 }
 
 .hora{
