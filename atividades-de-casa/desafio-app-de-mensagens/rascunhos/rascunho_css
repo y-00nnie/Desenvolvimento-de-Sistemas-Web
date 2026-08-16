@@ -1,0 +1,128 @@
+/* Vou refazer esse CSS porque tá muito desorganizado*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+body {
+    background-color: #DBDAD5; 
+}
+
+
+.fundo {
+    background-color: #008D7D;
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.app {
+    background-color: #EFEFEF;
+    border-radius: 1%;
+    height: 90%;
+    width: 90%;
+    position:absolute;
+    margin: 5%;
+    z-index: 0;
+}
+
+.menu_contatos {
+    background-color: #FEFEFE;
+    border-radius: 1%;
+    height: 100%;
+    width: 30%;
+    position:relative;
+    z-index: 1;
+}
+
+.menu_contatos header, .mensagens header{
+    background-color: #EFEFEF;
+    width: 100%;
+    height: 10%;
+}
+
+.mensagens {
+    background-color: #E7DFDC;
+    border-top-right-radius: 1%;
+    border-bottom-right-radius: 1%;
+    height: 100%;
+    width: 70%;
+    position:absolute;
+    top: 0;
+    left: 30%;
+    z-index: 1;
+}
+
+.profile_picture {
+    border-radius: 50%;
+    background-color:#ce4620;
+    height: 40px;
+    width: 40px;
+    margin: 7px;
+    object-fit: cover;
+}
+
+.caixa_de_mensagem {
+    background-color: #EFEFEF;
+    height: 7%;
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+input[type="text"]{
+    margin: 5px;
+    height: 70%;
+    width: 90%;
+    position: absolute;
+    border-style: hidden;
+    border-radius: 5px;
+}
+
+#notificacao {
+    background-color: #9EE1FE;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 10%;
+}
+
+#pesquisa{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 20%;
+}
+
+
+.contato{
+    background-color: #EAEAEC;
+    width: 99%;
+    height: 10%;
+    position: absolute;
+    top: 30%;
+}
+
+#pesquisa > input{
+    width: 95%;
+    margin: 2px;
+    position: absolute;
+    left: 1%;
+    top: 10%;
+}
+
+.lista_de_contatos, li {
+    list-style-type: none;
+}
+
+.mensagens

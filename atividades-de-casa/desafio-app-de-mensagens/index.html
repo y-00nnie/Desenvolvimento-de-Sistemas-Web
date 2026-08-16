@@ -1,15 +1,3 @@
-
-<!--
- -> vou refazer tudo
- -> preciso reorganizar muita coisa nesse código
- -> dar um jeito que colocar as informações de contato ao lado
-  da foto
-  -> trocar as medidas do css
-  ->adicionar footer na tela de mensagens
-  ->alterar nomes das classes, preciso ser mais específica
-
--->
-
 <!DOCTYPE html>
 
 <html lang="pt-br">
@@ -20,50 +8,58 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="fundo"></div>
+        <div class="fundo">
+        </div>
         <div class="app">
-            <aside class="menu_contatos">
+            <aside class="painel-contatos">
                 <header>
-                    <img class="profile_picture" src="/img/animal_chara_computer_neko.png">
+                    <img class="foto-perfil" src="img/hikkoshi_woman.png">
                 </header>
-                <div id="notificacao">
-
-                </div>
-                <div id="pesquisa">
-                    <input type="text" id="busca" placeholder="🔍 pesquisar contato">
-                </div>
-                <ul class="lista_de_contatos">
-                    <li class="contato">
+                <ul class="contatos">
+                    <li>
+                        <img class="foto-perfil" src="/img/animal_chara_computer_neko.png">
                         <article>
-                            <img class="profile_picture" src="/img/hikkoshi_woman.png">
-                            <p>Camila</p>
+                            <h4>Camila</h4>
                         </article>
                     </li>
-                    <li class="contato">
-                        <article>
-                            <img class="profile_picture" src="/img/animal_chara_computer_neko.png">
-                            <p>Você</p>
-                        </article>
-                        
-                    </li>
-
                 </ul>
-                
+                <ul class="contatos">
+                    <li>
+                        <img class="foto-perfil" src="img/hikkoshi_woman.png">
+                        <article>
+                            <h4>Você</h4>
+                        </article>
+                    </li>
+                </ul>
             </aside>
-            <main class="mensagens">
+            <main class="painel-mensagens">
                 <header>
-                    <figure>
-                        <img class="profile_picture" src="/img/hikkoshi_woman.png">
-                    </figure>
+                    <img class="foto-perfil" src="/img/animal_chara_computer_neko.png">
+                    <h4>Camila</h4>
                 </header>
-                <div id="bloco-de-mensagem">
-                    
-                </div>
-                <footer class= "caixa_de_mensagem">
-                    😊​
-                    <input type="text">
+                <section>
+                    <article class="data">
+                        <time datetime="2026-08-16">hoje</time>
+                    </article>
+                    <article class="mensagem">
+                        Calabresinhos
+                        <time class="hora" datetime="14:30">14:30</time>
+                    </article>
+                    <article class="mensagem">
+                        Só apanho
+                        <time class="hora" datetime="14:31">14:31</time>
+                    </article>
+                </section>
+                <footer>
+                    <button id="emoji">🙂</button>​
+                    <input id= "conteudo-mensagem" type="text" id="conteudo-mensagem">
+                    <button id="anexo">📎</button>​
+                    <button id="enviar">➡️​</button>​
                 </footer>
             </main>
         </div>
+        <script src="script.js"></script>
     </body>
+
+
 </html>

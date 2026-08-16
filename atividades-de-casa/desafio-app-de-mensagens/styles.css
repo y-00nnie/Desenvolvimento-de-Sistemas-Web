@@ -1,126 +1,144 @@
-/* Vou refazer esse CSS porque tá muito desorganizado*/
 *{
     margin: 0;
     padding: 0;
 }
 
-html, body {
-    height: 100%;
+body, html{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECEBE9;
 }
 
-
-body {
-    background-color: #DBDAD5; 
-}
-
-
-.fundo {
-    background-color: #008D7D;
-    height: 30%;
-    width: 100%;
+body::before {
+    background-color: #02958A;
+    content:'';
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
-}
-
-.app {
-    background-color: #EFEFEF;
-    border-radius: 1%;
-    height: 90%;
-    width: 90%;
-    position:absolute;
-    margin: 5%;
+    width: 100%;
+    height: 25vh;
     z-index: 0;
 }
 
-.menu_contatos {
-    background-color: #FEFEFE;
+.app{
+    background-color:blue;
+    height: 90vh;
+    width: 90vw;
     border-radius: 1%;
-    height: 100%;
-    width: 30%;
-    position:relative;
+    display: flex;
+    overflow: hidden;
     z-index: 1;
 }
 
-.menu_contatos header, .mensagens header{
+.painel-contatos{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FEFEFE;
+}
+
+.painel-contatos header{
+    background-color: #EFEFEF;
+    width: 100vw;
+    height: 10vh;
+}
+
+.painel-mensagens{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #E8E1D7;
+}
+
+.painel-mensagens header{
     background-color: #EFEFEF;
     width: 100%;
-    height: 10%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 5px;
 }
 
-.mensagens {
-    background-color: #E7DFDC;
-    border-top-right-radius: 1%;
-    border-bottom-right-radius: 1%;
-    height: 100%;
-    width: 70%;
-    position:absolute;
-    top: 0;
-    left: 30%;
-    z-index: 1;
+.painel-mensagens footer{
+    background-color: #ECEBE9;
+    width: 100%;
+    height: 8vh;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
 }
 
-.profile_picture {
+.painel-mensagens input{
+    border-style: hidden;
+    border-radius: 5px;
+    width: 80%;
+    height: 60%;
+    margin: 5px;
+}
+
+button {
+    border-style: hidden;
+    width: 10px;
+    height: 10px;;
+}
+
+section{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    gap: 5px;
+    flex: 1;
+}
+
+.mensagem{
+    background-color: #DFF6CE;
+    max-width: 40%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.hora{
+    font-size: smaller;
+    color:#8e8b89;
+    align-self: flex-end;
+}
+
+.data{
+    background-color: #DDEFF8;
+    max-width: 10%;
+    padding: 7px 8px;
+    border-radius: 8px;
+    align-self: center;
+    color: #8e8b89;
+}
+
+.foto-perfil{
+    background-color: #d26262;
     border-radius: 50%;
-    background-color:#ce4620;
     height: 40px;
     width: 40px;
     margin: 7px;
     object-fit: cover;
 }
 
-.caixa_de_mensagem {
-    background-color: #EFEFEF;
-    height: 7%;
-    width: 100%;
-    position:absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-}
-
-input[type="text"]{
-    margin: 5px;
-    height: 70%;
-    width: 90%;
-    position: absolute;
-    border-style: hidden;
-    border-radius: 5px;
-}
-
-#notificacao {
-    background-color: #9EE1FE;
-    width: 100%;
-    height: 10%;
-    position: absolute;
-    top: 10%;
-}
-
-#pesquisa{
-    width: 100%;
-    height: 10%;
-    position: absolute;
-    top: 20%;
-}
-
-
-.contato{
-    background-color: #EAEAEC;
-    width: 99%;
-    height: 10%;
-    position: absolute;
-    top: 30%;
-}
-
-#pesquisa > input{
-    width: 95%;
-    margin: 2px;
-    position: absolute;
-    left: 1%;
-    top: 10%;
-}
-
-.lista_de_contatos, li {
-    list-style-type: none;
+li{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 1px;
 }
